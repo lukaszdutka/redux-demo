@@ -3,15 +3,20 @@ import {connect} from 'react-redux';
 
 class SongList extends React.Component {
   render() {
+    const songs = this.props.songs.map(song => {
+      return <div>{song.title}</div>;
+    });
+
     return <div>
-      SongList
+      {songs}
     </div>;
   }
 }
 
 const mapStateToProps = state => {
-  console.log(state);
-  return state;
+  return {
+    songs: state.songs
+  };
 }
 
 export default connect(mapStateToProps)(SongList);
