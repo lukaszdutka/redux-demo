@@ -12,9 +12,6 @@ const App = () => {
         <div className="column eight wide">
           <SongDetail/>
         </div>
-        <div>test1</div>
-        <div>test2</div>
-        <div>test3</div>
       </div>
     </div>
   );
