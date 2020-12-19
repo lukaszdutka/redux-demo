@@ -12,6 +12,7 @@ const App = () => {
         <div className="column eight wide">
           <SongDetail/>
         </div>
+        <div>test1</div>
       </div>
     </div>
   );
